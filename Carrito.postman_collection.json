@@ -1,0 +1,439 @@
+{
+	"info": {
+		"_postman_id": "a6ae5d06-caa7-443b-b39b-2731195a1f23",
+		"name": "Carrito",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "call-JWT-user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user",
+							"value": "jorge",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "pass",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/auth/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Carrito-hello",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJKV1RGYWN0b3J5Iiwic3ViIjoiam9yZ2UiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNjAwMDEzNzEwLCJleHAiOjE2MDAwMTQzMTB9.C1BcE-eo6vKfEytfld8ElHWf_igq8tAwXvcXcxNSfNuaqDzzSLzQI2WSlDLamUvByZ5_rMZNPJvWUuuAS_r7eg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/sales/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJKV1RGYWN0b3J5Iiwic3ViIjoiam9yZ2UiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNjAwMDQzNzgxLCJleHAiOjE2MDAwNDQzODF9.d3CacyevVKs5H0Wn4-ULHLJpa5BTSk4OnLLRsoKKU-nm1y569rYE0KE5d47kZkBcIazUkPYTsD7k-8VRON0jow",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/sales/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"sales",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ClienteRegistroAPI",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJKV1RGYWN0b3J5Iiwic3ViIjoiam9yZ2UiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNjAwMTA2NzUwLCJleHAiOjE2MDAxMDczNTB9.aUGUXaPD7pFs0tAwE1SE3gY0gjMZCv6qJ4C5dIedyJ1I_nKT9k2A7TZyoFSKyjO3gzPIEiN74yZDiCjajPE29w",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"jorge3\",\r\n    \"lastName\":\"infante osorio2\",\r\n    \"dni\":\"12345\",\r\n    \"phone\":\"344545\",\r\n    \"email\":\"qwqw@gmail.com\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/car/client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"car",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearProductoAPI",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJKV1RGYWN0b3J5Iiwic3ViIjoiam9yZ2UiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNjAwMTA2MDg5LCJleHAiOjE2MDAxMDY2ODl9.AUpsRcVKrmbjcRGllZooTEV8yZTmt_VmizEG0sFpODWkz0_2xk1pshSvioX6C2UiLJPKIOSsGUsIFQOz7cisMQ",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"platano\",\r\n    \"price\":5\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/car/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"car",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarProductoAPI",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJKV1RGYWN0b3J5Iiwic3ViIjoiam9yZ2UiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNjAwMTA3Mzc5LCJleHAiOjE2MDAxMDc5Nzl9.5TGzQx9fpOlTyY77NntShH0Rj0wWWLTSzFZ9E8sMTkxcD18I2RWm7CunydjNq17GZrsYPntepPApGC67AlIrVA",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"piñazo\",\r\n    \"price\":15\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/car/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"car",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerTodosProductoAPI",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJKV1RGYWN0b3J5Iiwic3ViIjoiam9yZ2UiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNjAwMTA2MDg5LCJleHAiOjE2MDAxMDY2ODl9.AUpsRcVKrmbjcRGllZooTEV8yZTmt_VmizEG0sFpODWkz0_2xk1pshSvioX6C2UiLJPKIOSsGUsIFQOz7cisMQ"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/car/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"car",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerxIDProductoAPI",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJKV1RGYWN0b3J5Iiwic3ViIjoiam9yZ2UiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNjAwMTA2MDg5LCJleHAiOjE2MDAxMDY2ODl9.AUpsRcVKrmbjcRGllZooTEV8yZTmt_VmizEG0sFpODWkz0_2xk1pshSvioX6C2UiLJPKIOSsGUsIFQOz7cisMQ"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/car/product/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"car",
+						"product",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BorrarxIDProductoAPI",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJKV1RGYWN0b3J5Iiwic3ViIjoiam9yZ2UiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNjAwMTA2MDg5LCJleHAiOjE2MDAxMDY2ODl9.AUpsRcVKrmbjcRGllZooTEV8yZTmt_VmizEG0sFpODWkz0_2xk1pshSvioX6C2UiLJPKIOSsGUsIFQOz7cisMQ"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/car/product/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"car",
+						"product",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegistroVentaAPI",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJKV1RGYWN0b3J5Iiwic3ViIjoiam9yZ2UiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNjAwMTA2NzUwLCJleHAiOjE2MDAxMDczNTB9.aUGUXaPD7pFs0tAwE1SE3gY0gjMZCv6qJ4C5dIedyJ1I_nKT9k2A7TZyoFSKyjO3gzPIEiN74yZDiCjajPE29w",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"date\":\"2020-09-14T10:15:30+01:00\",\r\n    \"clientId\":1,\r\n    \"clientName\":\"jorge\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/car/sale",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"car",
+						"sale"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerTodasVentaAPI",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJKV1RGYWN0b3J5Iiwic3ViIjoiam9yZ2UiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNjAwMDYyODA0LCJleHAiOjE2MDAwNjM0MDR9.5miU5evV5PYMRKjYkjFcrknF3LL-nkwa7VoTeLRaF7Rc46MShtEp-PkDspj428i1fTOrmwduFZPNQgO4gPfAYQ"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/sales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"sales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerxIDVentaAPI",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJKV1RGYWN0b3J5Iiwic3ViIjoiam9yZ2UiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNjAwMTA2NzUwLCJleHAiOjE2MDAxMDczNTB9.aUGUXaPD7pFs0tAwE1SE3gY0gjMZCv6qJ4C5dIedyJ1I_nKT9k2A7TZyoFSKyjO3gzPIEiN74yZDiCjajPE29w"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/car/sale/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"car",
+						"sale",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegistroDetalleVentaAPI",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJKV1RGYWN0b3J5Iiwic3ViIjoiam9yZ2UiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNjAwMDk4ODc0LCJleHAiOjE2MDAwOTk0NzR9.ECV5UPAXMwwbrYeCiFYyotsjeCnkQGJ8qPwuR6AD3mqyAPC__6RUB_uXElwwklSLziBFbmJRFOtGJoPjIiL0Nw"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " [{\r\n    \"id\": 1,\r\n    \"name\": \"mango12\",\r\n    \"price\": 23\r\n},\r\n{\r\n    \"id\": 3,\r\n    \"name\": \"mango22\",\r\n    \"price\": 2\r\n}\r\n\r\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/sales/detail/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"sales",
+						"detail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
