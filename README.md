@@ -78,3 +78,15 @@ response: [
               }
           ]
 ```
+
+
+##### Improvements:
+```
+The security should get user/pass data from DT or use external provider like 
+WSO2 Identity Server or Keycloack.
+
+Use environment variables or maven profile
+
+Create micro-services for each API
+
+```
